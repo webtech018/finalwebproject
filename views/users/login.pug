@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+    h1 LogIn
+    form(action="/login",method="post")
+        .form-group
+            label(for="contact") Email
+            input#contact(type="text", class="form-control", name="email",value="webproject@gmail.com")
+        .form-group
+            label(for="city") Password
+            input#city(type="text", class="form-control", name="password",value="web123")
+        input(type="submit", class="btn btn-success")
+
+        <br/>
+        <br/>
+        <br/>
+        
+        <footer>
+         <p class="p-3 bg-dark text-white text-center">@carshowroommanagsystem</p>
+        </footer>

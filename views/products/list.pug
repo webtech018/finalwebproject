@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+
+  <h1> Customers Record</h1>
+    .row
+        .col-sm-8
+            h1=title
+        .col-sm-4
+        <br/>
+        <br/>
+            a(href="/products/add", class="btn btn-success float-right") Add Record
+        <br/>
+        <br/>
+
+    table.table
+        thead
+            tr
+                th CustomerName
+                th Contact
+                th City
+                th actions
+
+        tbody
+            each product in products
+                tr  
+                    td=product.name
+                    td=product.contact
+                    td=product.city
+                    td
+
+                        a(href="/products/delete/"+product._id, class="btn btn-danger") Delete
+                        a(href="/products/edit/"+product._id, class="btn btn-info") Edit

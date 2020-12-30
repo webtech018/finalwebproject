@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:white;
+}
+
+h1 {
+  color:firebrick;
+}
+
+h1{
+  text-align: center;
+}
+
+.jumbotron{
+ color: darkslategrey;
+}
+.jumbotron{
+	font-size: 25px;
+}

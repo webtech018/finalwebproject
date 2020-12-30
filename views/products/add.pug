@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+    h1 Add Record
+    form(action="/products/add",method="post")
+        .form-group
+            label(for="name") CustomerName
+            input#name(type="text", class="form-control", name="name")
+        .form-group
+            label(for="contact") contact
+            input#contact(type="text", class="form-control", name="contact")
+        .form-group
+            label(for="city") City
+            input#city(type="text", class="form-control", name="city")
+        input(type="submit", class="btn btn-success")
+        <br/>
+        <br/>
+        <br/>
+        
+        <footer>
+         <p class="p-3 bg-dark text-white text-center">@carshowroommanagsystem</p>
+        </footer>
